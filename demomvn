@@ -23,3 +23,23 @@ go to repo bankaccount copy n paste in app .java rename bankservice .java
 sample-app
 mvn package
 cd target -cp sample-app-1.0-SNAPSHOT.jar com.bnmit
+
+
+
+
+
+
+
+
+| **Step No.** | **Activity / Action**   | **Command / Details**                                                                                                                                                                  | **Expected Outcome / Notes**                                                                          |
+| ------------ | ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| 1            | Create Project Folder   | Create folder in `Documents` or `Desktop`: `MMVN-demo`                                                                                                                                 | Folder ready to hold Maven project                                                                    |
+| 2            | Open Command Prompt     | `cd C:\Users\<YourUsername>\Documents\MMVN-demo`                                                                                                                                       | Navigate to project folder                                                                            |
+| 3            | Check Maven Version     | `mvn --version`                                                                                                                                                                        | Maven version and Java version displayed                                                              |
+| 4            | Generate Maven Project  | `mvn archetype:generate` <br>Choose archetype (e.g., 2309) <br>GroupId: `com.bnmit` <br>ArtifactId: `sample-app` <br>Version: `1.0-SNAPSHOT` <br>Package: `com.bnmit` <br>Confirm: `y` | Maven project `sample-app` created with standard folder structure                                     |
+| 5            | Navigate to Project     | `cd sample-app`                                                                                                                                                                        | Ready to add code                                                                                     |
+| 6            | Add Java Code           | Copy `BankService.java` from repo `bankaccount` → Paste in `src/main/java/com/bnmit/` <br>Ensure package declaration: `package com.bnmit;`                                             | Source code ready for compilation                                                                     |
+| 7            | Build & Package Project | `mvn package`                                                                                                                                                                          | JAR file created in `target/` folder: `sample-app-1.0-SNAPSHOT.jar` <br>Console shows `BUILD SUCCESS` |
+| 8            | Run Java Application    | `cd target` <br>`java -cp sample-app-1.0-SNAPSHOT.jar com.bnmit.BankService`                                                                                                           | Program executes; console shows Bank Service messages                                                 |
+| 9            | Verify Output           | Observe console messages: <br>`Welcome to Bank Service!` <br>`Account Holder: Rakshitha` <br>`Final Balance: $4500.0`                                                                  | Confirms Maven project compiled and ran successfully                                                  |
+
