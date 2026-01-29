@@ -1,0 +1,25 @@
+create a new folder mmvn demo in your documenys/dekstop
+command prompt:
+
+mvn --version
+mvn archtype:generate
+(2309: 2309)
+
+
+groupID:com.bnmit
+artifactid:sample-app
+1.0-SNAPSHOT :1.0 SNAPSHOT
+package: com.bnmit
+y
+
+
+go to sample app
+src
+main> java >com >bnmit> app.java
+
+
+go to repo bankaccount copy n paste in app .java rename bankservice .java
+
+sample-app
+mvn package
+cd target -cp sample-app-1.0-SNAPSHOT.jar com.bnmit
