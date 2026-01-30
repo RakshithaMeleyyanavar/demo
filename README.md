@@ -223,6 +223,46 @@ class StringLength {
 If you want, I can also give programs for **factorial, palindrome, Armstrong, Fibonacci** etc.
 
 
+# 1. Clone the repository
+git clone <repository-url>
+cd <repository-name>
+
+# 2. Pull latest changes from main
+git checkout main
+git pull origin main
+
+# 3. Create and switch to a feature branch
+git checkout -b feature-1
+
+# 4. Make changes to files locally
+# (edit files using your editor)
+
+# 5. Check status of changes
+git status
+
+# 6. Stage changes
+git add .
+
+# 7. Commit changes
+git commit -m "Add feature-1 changes"
+
+# 8. Push feature branch to GitHub
+git push origin feature-1
+
+# 9. [On GitHub UI] Create Pull Request from feature-1 to main
+
+# 10. After PR is merged on GitHub, update local main
+git checkout main
+git pull origin main
+
+# 11. Delete local feature branch (optional cleanup)
+git branch -d feature-1
+
+# 12. Delete remote feature branch (optional cleanup)
+git push origin --delete feature-1
+
+
+
 
 | **Command / Action**                                      | **One-Line Explanation**                                     |
 | --------------------------------------------------------- | ------------------------------------------------------------ |
