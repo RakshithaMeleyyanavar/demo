@@ -221,3 +221,34 @@ class StringLength {
 ✔ Length of String
 
 If you want, I can also give programs for **factorial, palindrome, Armstrong, Fibonacci** etc.
+
+
+
+| **Command / Action**                                      | **One-Line Explanation**                                     |
+| --------------------------------------------------------- | ------------------------------------------------------------ |
+| `git config --global user.name "Your Name"`               | Sets your Git username globally for commits.                 |
+| `git config --global user.email "your_email@example.com"` | Sets your Git email globally for commits.                    |
+| `git clone <repo-url>`                                    | Downloads a repository from GitHub to local machine.         |
+| `cd <folder>`                                             | Changes directory to the specified folder.                   |
+| `git init`                                                | Initializes a new local Git repository.                      |
+| `git remote add origin <repo-url>`                        | Connects local repo to remote GitHub repository.             |
+| `git pull origin main`                                    | Fetches and merges changes from remote `main` branch.        |
+| `git fetch origin`                                        | Downloads updates from remote without merging.               |
+| `git merge origin/main`                                   | Merges fetched changes from remote into local branch.        |
+| `git add <file>`                                          | Stages file(s) to be committed.                              |
+| `git add .`                                               | Stages all changes in the folder for commit.                 |
+| `git commit -m "message"`                                 | Records staged changes to local repository with a message.   |
+| `git push origin main`                                    | Uploads local commits to remote `main` branch.               |
+| `git push -u origin main`                                 | First-time push: sets remote `main` as default upstream.     |
+| `git branch <branch-name>`                                | Creates a new branch locally.                                |
+| `git checkout <branch-name>`                              | Switches to the specified branch.                            |
+| `git checkout master`                                     | Switches back to the `master` branch.                        |
+| `git pull origin master`                                  | Updates local master branch after merge on GitHub.           |
+| `git branch -d <branch-name>`                             | Deletes a local branch.                                      |
+| `git push origin --delete <branch-name>`                  | Deletes a branch from remote repository.                     |
+| `Click Fork`                                              | Copies someone else’s repository to your GitHub account.     |
+| `Click Compare & Pull Request`                            | Starts a pull request to merge your branch into base branch. |
+| `Click Create Pull Request`                               | Submits your changes for review.                             |
+| `Review Changes → Approve`                                | Reviewer approves the pull request on GitHub UI.             |
+| `Click Merge Pull Request → Confirm Merge`                | Merges the feature branch into base branch on GitHub.        |
+
