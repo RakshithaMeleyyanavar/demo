@@ -52,3 +52,172 @@ class BankAccount {
 18	Navigate to Target Folder	cd target	Ready to run JAR
 
 19	Run Java Application	java -cp sample-app-1.0-SNAPSHOT.jar com.bnmit.BankService	Output on console: Final Balance:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Sure 👍 Here are **simple Java programs** for each asked problem (very easy VTU style).
+
+---
+
+# ✅ 1. Java Program to Calculate Area of Square
+
+```java
+import java.util.Scanner;
+
+class AreaSquare {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter side of square: ");
+        int side = sc.nextInt();
+
+        int area = side * side;
+
+        System.out.println("Area of Square = " + area);
+    }
+}
+```
+
+---
+
+# ✅ 2. Java Program to Calculate Simple Interest
+
+Formula:
+**SI = (P × R × T) / 100**
+
+```java
+import java.util.Scanner;
+
+class SimpleInterest {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter Principal: ");
+        int p = sc.nextInt();
+
+        System.out.print("Enter Rate: ");
+        int r = sc.nextInt();
+
+        System.out.print("Enter Time: ");
+        int t = sc.nextInt();
+
+        int si = (p * r * t) / 100;
+
+        System.out.println("Simple Interest = " + si);
+    }
+}
+```
+
+---
+
+# ✅ 3. Java Program to Check Whether a Number is Prime or Not
+
+```java
+import java.util.Scanner;
+
+class PrimeCheck {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter a number: ");
+        int n = sc.nextInt();
+
+        int count = 0;
+
+        for(int i = 1; i <= n; i++) {
+            if(n % i == 0)
+                count++;
+        }
+
+        if(count == 2)
+            System.out.println(n + " is Prime Number");
+        else
+            System.out.println(n + " is Not Prime Number");
+    }
+}
+```
+
+---
+
+# ✅ 4. Java Program to Print Alternate Prime Numbers (1 to N)
+
+Example Output: 2, 5, 11, 17...
+
+```java
+import java.util.Scanner;
+
+class AlternatePrime {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter limit: ");
+        int n = sc.nextInt();
+
+        int primeCount = 0;
+
+        for(int num = 2; num <= n; num++) {
+            int count = 0;
+
+            for(int i = 1; i <= num; i++) {
+                if(num % i == 0)
+                    count++;
+            }
+
+            if(count == 2) {
+                primeCount++;
+
+                if(primeCount % 2 != 0)
+                    System.out.print(num + " ");
+            }
+        }
+    }
+}
+```
+
+---
+
+# ✅ 5. Java Program to Find Length of a String
+
+```java
+import java.util.Scanner;
+
+class StringLength {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter a string: ");
+        String str = sc.nextLine();
+
+        System.out.println("Length of String = " + str.length());
+    }
+}
+```
+
+---
+
+✅ Done:
+✔ Area of Square
+✔ Simple Interest
+✔ Prime Check
+✔ Alternate Prime Numbers
+✔ Length of String
+
+If you want, I can also give programs for **factorial, palindrome, Armstrong, Fibonacci** etc.
